@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">runmate</string>
+    <string name="home">Home</string>
+    <string name="create">Feed</string>
+    <string name="account">Profile</string>
+
+    // Auth
+    <string name="register">Register</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="login">Login</string>
+    <string name="email_field">email</string>
+    <string name="field_username">username</string>
+    <string name="field_password">password</string>
+    <string name="field_register">Register</string>
+    <string name="field_login">Login</string>
+    <string name="reset_password">Reset password</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="first">First</string>
+    <string name="second">Second</string>
+    <string name="third">Third</string>
+
+
+    <!-- FRAGMENT'S NAMES -->
+    <string name="run">run</string>
+    <string name="feed">feed</string>
+    <string name="challenge">challenge</string>
+    <string name="premium">premium</string>
+    <string name="profile">profile</string>
+    <!-- FEED FRAGMENTS NAMES -->
+    <string name="history">history</string>
+    <string name="messages">messages</string>
+
+    <!-- PROFILE FRAGMENTS NAMES -->
+    <string name="empty"> </string>
+    <string name="pace">Pace</string>
+    <string name="kcal">Kcal</string>
+    <string name="time">Time</string>
+    <string name="friends">Friends</string>
+    <string name="distance">Distance</string>
+    <string name="activities">Activities</string>
+    <string name="EditProfile">Edit profile</string>
+    <string name="edit_photo">Edit photo</string>
+    <string name="change_photo">Change photo</string>
+    <string name="description">description</string>
+</resources>

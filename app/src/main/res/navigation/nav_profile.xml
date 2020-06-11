@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_profile"
+    app:startDestination="@id/profileFragment">
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.lchowaniec.runmate_me.ui.profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment"
+            app:popEnterAnim="@anim/left_in"
+            app:popExitAnim="@anim/right_out"
+            app:enterAnim="@anim/right_in"
+            app:exitAnim="@anim/left_out"
+          />
+        <action
+            android:id="@+id/action_profileFragment_to_baseFriendFragment"
+            app:destination="@id/baseFriendFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.lchowaniec.runmate_me.ui.profile.EditProfileFragment"
+        android:label="@string/EditProfile"
+        tools:layout="@layout/fragment_edit_profile"
+        >
+        <action
+            android:id="@+id/action_editProfileFragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:popUpTo="@id/nav_profile"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/addFriendFragment"
+        android:name="com.lchowaniec.runmate_me.ui.profile.friends.AddFriendFragment"
+        android:label="fragment_add_friend"
+        tools:layout="@layout/fragment_add_friend" >
+        <action
+            android:id="@+id/action_addFriendFragment_to_friendProfileFragment"
+            app:destination="@id/friendProfileFragment" />
+        <action
+            android:id="@+id/action_addFriendFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/friendProfileFragment"
+        android:name="com.lchowaniec.runmate_me.ui.profile.friends.FriendProfileFragment"
+        android:label="FriendProfileFragment" />
+    <fragment
+        android:id="@+id/baseFriendFragment"
+        android:name="com.lchowaniec.runmate_me.ui.profile.friends.BaseFriendFragment"
+        android:label="fragment_base_friend_fragment"
+        tools:layout="@layout/fragment_base_friend_fragment" >
+        <action
+            android:id="@+id/action_baseFriendFragment_to_addFriendFragment"
+            app:destination="@id/addFriendFragment" />
+        <action
+            android:id="@+id/action_baseFriendFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_baseFriendFragment_to_friendProfileFragment"
+            app:destination="@id/friendProfileFragment" />
+    </fragment>
+</navigation>
